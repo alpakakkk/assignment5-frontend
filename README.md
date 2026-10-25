@@ -1,6 +1,6 @@
 # Assignment #5 — JavaScript Basics (DOM Manipulation & Events)
 
-**Student:** Almanzor Kamzeyev
+**Student:** Almanzor Kamzeyev    
 **Group:** SE-2540
 
 ## Project overview
