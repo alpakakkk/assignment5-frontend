@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JavaScript Basics Assignment 5: profile, events and DOM list manipulation.">
+  <title>Assignment 5 | JavaScript Basics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <p class="eyebrow">WEB TECHNOLOGIES · ASSIGNMENT #5</p>
+      <h1>My Profile Dashboard</h1>
+      <p class="subtitle">JavaScript Basics: Objects, Arithmetic, Events &amp; DOM Manipulation</p>
+    </header>
+
+    <section class="card" aria-labelledby="profile-title">
+      <div class="section-heading">
+        <span class="number">01</span>
+        <div><h2 id="profile-title">Personal Profile</h2><p>Part 1 · Profile Object, Data Types &amp; Arithmetic</p></div>
+      </div>
+      <div class="profile-top">
+        <div class="avatar" aria-hidden="true">JS</div>
+        <div>
+          <p class="label">Username</p>
+          <h3 id="display-name">Student</h3>
+          <span class="chip" id="developer-status">Learning JavaScript</span>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="label">Birth year</span><strong id="display-birth-year">2005</strong></div>
+        <div class="stat"><span class="label">Age (years)</span><strong id="display-age">—</strong></div>
+        <div class="stat"><span class="label">Hobbies count</span><strong id="display-hobby-count">—</strong></div>
+      </div>
+      <p class="hint">Age is calculated using the current year and your birth year. Open the browser console to see the profile object and calculations.</p>
+    </section>
+
+    <section class="card" aria-labelledby="form-title">
+      <div class="section-heading">
+        <span class="number">02</span>
+        <div><h2 id="form-title">Update Profile</h2><p>Part 2 · Form Input &amp; Event Responses</p></div>
+      </div>
+      <form id="profile-form">
+        <div class="form-grid">
+          <div class="field">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" value="Student" required maxlength="40" placeholder="Enter your username">
+          </div>
+          <div class="field">
+            <label for="birth-year">Birth year</label>
+            <input id="birth-year" name="birthYear" type="number" value="2005" min="1900" required placeholder="e.g. 2005">
+          </div>
+        </div>
+        <button type="submit" class="button primary">Create / Update Profile</button>
+        <p id="form-message" class="message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="card" aria-labelledby="hobbies-title">
+      <div class="section-heading">
+        <span class="number">03</span>
+        <div><h2 id="hobbies-title">My Hobbies</h2><p>Part 3 · DOM List Manipulation</p></div>
+      </div>
+      <div class="field">
+        <label for="hobby-input">New hobby</label>
+        <input id="hobby-input" type="text" maxlength="60" placeholder="e.g. Swimming">
+      </div>
+      <div class="button-row">
+        <button type="button" id="add-item" class="button primary">+ Add Item</button>
+        <button type="button" id="remove-item" class="button secondary">− Remove Item</button>
+      </div>
+      <ul id="hobbies-list" class="hobby-list" aria-label="Hobbies"></ul>
+      <p id="list-message" class="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <footer>Built with HTML, CSS and JavaScript · Assignment #5</footer>
+  </main>
+</body>
+</html>
