@@ -38,3 +38,4 @@ This project demonstrates JavaScript objects and data types, arithmetic calculat
 I created the basic HTML structure, styled the page in CSS, defined a JavaScript profile object, used arithmetic operators to calculate age and hobbies count, connected form submission to an event listener, and used DOM methods to create and remove list elements. Finally, I tested the interactions in the browser.
 
 ## Website link
+https://alpakakkk.github.io/assignment5-frontend/
